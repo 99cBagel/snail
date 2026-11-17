@@ -55,7 +55,7 @@ Review coverage — from *Dementia Friendly Communities* developments (global ed
 - Doctors sent SMS in the format "session ID, answer ABCD".
 - We summarized from all sessions and fed the results to the pharma's corporate and accounting departments.
 - Behind the session sat the department-meeting interactive system (科室会互动系统): a representative database (session-code distribution and attendee archiving), a doctor database (region, city, PIM records, answer records), a question-bank module, an answering module that matched SMS answers to the session's topic automatically, a hotline trigger module, a lucky-draw module, and an analysis module that generated reports — plus the SMS platform itself, and filmed courseware production (KOL talk filmed with professional crew and studio, PPT synced with the video in post-production, and a client program with warm-up video, meeting-code activation, timed Q&A, and on-site draw).
-- **Result:** The initiative was received well — so much success that nearly ALL major pharmas in Beijing and Shanghai came to Presenter to implement LL-SMS, popularly known as "短信科室会" (SMS department meeting); it was at this time that the term became coined. Market adoption lasted for a few years, until the age of streaming video and mobile data, and video conference calls.
+- **Result:** The initiative was received well — so much success that nearly ALL major pharmas in Beijing and Shanghai came to Presenter to implement LL-SMS, popularly known as "短信科室会" (Lunch-Learn and SMS Session); it was at this time that the term became coined. Market adoption lasted for a few years, until the age of streaming video and mobile data, and video conference calls.
 
 ## Case 3
 
