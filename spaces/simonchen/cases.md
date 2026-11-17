@@ -11,7 +11,7 @@ updated: 2026-11-17
 
 # Cases
 
-Status: Case 1 approved by the principal, 2026-11-17; Pain Points subsection added under Situation at his direction. Case 2 approved and published 2026-11-17. Case 3 still to fill.
+Status: Case 1 approved by the principal, 2026-11-17; Pain Points subsection added under Situation at his direction. Case 2 approved and published 2026-11-17. Case 3 approved and published 2026-11-17. All three cases are complete.
 
 ## Case 1 — The Yellow Bracelet Project, China (2012–2024)
 
@@ -61,10 +61,28 @@ Review coverage — from *Dementia Friendly Communities* developments (global ed
 - Behind the session sat the department-meeting interactive system (科室会互动系统): a representative database (session-code distribution and attendee archiving), a doctor database (region, city, PIM records, answer records), a question-bank module, an answering module that matched SMS answers to the session's topic automatically, a hotline trigger module, a lucky-draw module, and an analysis module that generated reports — plus the SMS platform itself, and filmed courseware production (KOL talk filmed with professional crew and studio, PPT synced with the video in post-production, and a client program with warm-up video, meeting-code activation, timed Q&A, and on-site draw).
 - **Result:** The initiative was received well — so much success that nearly ALL major pharmas in Beijing and Shanghai came to Presenter to implement LL-SMS, popularly known as "短信科室会" (Lunch-Learn and SMS Session); it was at this time that the term became coined. Market adoption lasted for a few years, until the age of streaming video and mobile data, and video conference calls.
 
-## Case 3
+## Case 3 — Weekly Journal Abstract via MMS, China (2010–2013)
 
-- **Situation:** to fill
-- **Actions:** to fill
-- **Result:** to fill
-- **What made it hard:** to fill
-- **What may be shared, and how anonymized:** to fill
+**Client:** Pfizer, Novartis, AstraZeneca, Sanofi, Roche, and Novo Nordisk
+
+**Tagline:** Novice medical communication · KOL-written abstracts · weekly journal by MMS · 1,500 characters vs SMS 60 · literature in Chinese for practitioners
+
+- **Situation:** Accessing an original publication was expensive, and most practitioner doctors could not work through an in-depth English article.
+- **Pain Points:**
+  - Pharma: wanted to engage in medical communication, which has a proven success of branding a product as evidence-supported — but the access of a full article is quite expensive.
+  - Sales reps: wanted to be updated about new developments, but had a knowledge gap even if given the original publication.
+  - Physicians: wanted to be updated with the recent literature, but joining a conference is expensive; even if given the original publication, they may not be able to digest it with the English.
+- **Actions:** At Presenter, we hired KOLs to read the original publications and write abstracts in Chinese, and published them weekly via long message — MMS, up to 1,500 characters, while an SMS holds only 60. Each issue carried abstracts compiled from the field's authoritative journals, a quiz at the end answered by SMS for points, and a route for readers to request the full text. The service was free to the final reader.
+- **Result:** A running journal service, not a one-off campaign. The sample issue below (2011) was serving 828 hospitals and 4,695 endocrinology physicians, with 364 physicians joining the previous issue's SMS quiz.
+
+Sample issue — 《糖尿病进展信息快车》 (Diabetes Progress Info Express), Issue 33 (NMX30-MMS-2011-2), an MMS journal produced for Novo Nordisk (China); abstracts trimmed to titles and citations:
+
+> 尊敬的医生：
+> 《糖尿病进展信息快车》是诺和诺德（中国）制药有限公司为您提供的学术信息服务，择要编译糖尿病领域权威杂志的最新文献精要，并通过彩信形式精确传递。本周刊每两周发送一次，对最终读者完全免费。
+> 本周刊主要报道《Endocrine Review》、《Diabetes》、《Diabetes Care》等糖尿病领域权威杂志当期内容和《新英格兰医学杂志》、《柳叶刀》、《BMJ》杂志糖尿病方面内容。
+> 【开卷有益 答题有奖积分】欢迎继续参加短信答题有奖积分活动，每期结束时为您留下一道问题，您只需按照指引回复短信作答即可（仅产生正常短信发送费），您的回复将记录在第四轮积分中。
+> 【新增全文服务】如果您想得到每期文献摘要原文，请到 http://cmemeeting.dxy.cn/index.html 链接上提交您的索取原文申请。
+> 【彩信报动态】《糖尿病进展信息快车》彩信报正为全国828家医院的4695位内分泌医师提供学术服务，上期共有364位医师参与短信有奖互动。
+> 【内容提要】非白人群体提示糖尿病风险的BMI值应作修正 (Diabetes Care. 2011 Jun 16) · Cochrane图书馆：中药对糖尿病周围神经病疗效的系统评价 (Cochrane Database Syst Rev. 2011 Jun 15) · FDA提示吡格列酮可能增加膀胱癌危险 (FDA网站) · ZODIAC-20研究：老年人血糖控制与死亡风险 (Int J Clin Pract. 2011 Apr) · 预混胰岛素在中国糖尿病治疗中的优势 (中华糖尿病杂志 2011年2月) · 双时相门冬胰岛素30每日1次对2型糖尿病患者的疗效和安全性 (中华糖尿病杂志 2011年1期)
+> 【有奖问答】本期ESS协作组双时相门冬胰岛素30每日1次研究中，HbA1c达标率随什么因素而降低：(33A) 糖尿病病程的延长 (33B) 基线体重较大 (33C) 基线HbA1c较低 — 选定一个选项发送短信到积分平台。
+> 【温馨提示】本彩信内容由医学界独立人士编写，不代表诺和诺德（中国）制药有限公司观点，仅做学术研究参考，不作为临床决策依据。
