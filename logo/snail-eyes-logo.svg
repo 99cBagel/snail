@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="240" viewBox="0 0 680 240">
+  <rect width="680" height="240" fill="#f4f1ec"/>
+  <g transform="translate(8,8) scale(0.933)" fill="none" stroke="#9c6642" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- eyes -->
+    <circle cx="64" cy="48" r="16"/>
+    <circle cx="156" cy="44" r="16"/>
+    <circle cx="64" cy="48" r="5" fill="#9c6642" stroke="none"/>
+    <circle cx="156" cy="44" r="5" fill="#9c6642" stroke="none"/>
+    <!-- eye stalks -->
+    <path d="M88 132 C80 104 72 84 66 66"/>
+    <path d="M104 128 C100 100 88 80 80 64"/>
+    <path d="M140 128 C140 100 144 78 148 62"/>
+    <path d="M164 126 C166 98 162 78 160 62"/>
+    <!-- body -->
+    <path d="M40 196 C36 152 52 134 88 130"/>
+    <path d="M104 128 q18 8 36 0"/>
+    <path d="M164 128 C196 130 206 152 204 196"/>
+    <!-- smile -->
+    <path d="M104 158 q16 12 34 4"/>
+    <!-- ground waves -->
+    <path d="M24 198 q16 -12 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/>
+    <path d="M24 218 q16 -12 32 0 t32 0 t32 0 t32 0 t32 0 t32 0"/>
+  </g>
+  <text x="262" y="118" font-family="Verdana, Geneva, Tahoma, sans-serif" font-size="52" font-weight="700" fill="#9c6642">Snail Eyes</text>
+  <text x="264" y="158" font-family="Verdana, Geneva, Tahoma, sans-serif" font-size="22" fill="#9c6642" opacity="0.85">Visual Training for New Skills</text>
+</svg>
