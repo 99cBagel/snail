@@ -63,19 +63,19 @@ Review coverage — from *Dementia Friendly Communities* developments (global ed
 
 ## Case 3 — Weekly Journal Abstract via MMS, China (2010–2013)
 
-**Client:** Pfizer, Novartis, AstraZeneca, Sanofi, Roche, and Novo Nordisk
+**Client:** Pfizer, Novartis, Eisai and Novo Nordisk
 
-**Tagline:** Novice medical communication · KOL-written abstracts · weekly journal by MMS · 1,500 characters vs SMS 60 · literature in Chinese for practitioners
+**Tagline:** Novice medical communication · KOL-written abstracts · weekly journal by MMS · earning points by response· literature in Chinese for practitioners
 
 - **Situation:** Accessing an original publication was expensive, and most practitioner doctors could not work through an in-depth English article.
 - **Pain Points:**
-- Pharma: wanted to engage in medical communication, which has a proven success of branding a product as evidence-supported — but the access of a full article is quite expensive.
-- Sales reps: wanted to be updated about new developments, but had a knowledge gap even if given the original publication.
+- Pharma: wanted to engage in medical communication, which has a proven success of branding a product as evidence-supported — but the access of a full article is quite expensive, and they wanted to maintain readership.
+- Sales reps: like to warm the visit with give-outs; also wanted to keep themselves updated about new developments, but had a knowledge gap even if given the original publication.
 - Physicians: wanted to be updated with the recent literature, but joining a conference is expensive; even if given the original publication, they may not be able to digest it with the English.
-- **Actions:** At Presenter, we hired KOLs to read the original publications and write abstracts in Chinese, and published them weekly via long message — MMS, up to 1,500 characters, while an SMS holds only 60. Each issue carried abstracts compiled from the field's authoritative journals, a quiz at the end answered by SMS for points, and a route for readers to request the full text. The service was free to the final reader.
+- **Actions:** At Presenter, we hired KOLs to read the original publications and write abstracts in Chinese, and published them weekly via long message — MMS, up to 1,500 characters, while an SMS holds only 60. Each issue carried abstracts compiled from the field's authoritative journals, a quiz at the end answered by SMS for points, and a route for readers to request the full text. The service was free to the final reader. We also added an earning-points program, mixed with the readership: answering the quiz by SMS earned points, and the points could be redeemed for gifts or keepsakes.
 - **Result:** A running journal service, not a one-off campaign. The sample issue below (2011) was serving 828 hospitals and 4,695 endocrinology physicians, with 364 physicians joining the previous issue's SMS quiz.
 
-Sample issue — 《糖尿病进展信息快车》 (Diabetes Progress Info Express),, an MMS journal produced for Novo Nordisk (China); 
+Sample issue — 《糖尿病进展信息快车》 (Diabetes Progress Info Express),, an MMS journal produced for Novo Nordisk (China);
 ···
 尊敬的医生：
 《糖尿病进展信息快车》是诺和诺德（中国）制药有限公司为您提供的学术信息服务，择要编译糖尿病领域权威杂志的最新文献精要，并通过彩信形式精确传递。本周刊每两周发送一次，对最终读者完全免费。
