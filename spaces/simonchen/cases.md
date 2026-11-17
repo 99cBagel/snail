@@ -42,7 +42,7 @@ Review coverage — from *Dementia Friendly Communities* developments (global ed
 
 ## Case 2 — Lunch Learn and SMS Feedback (LL-SMS), China (2005–2012)
 
-**Tagline:** Lunch+CD+ SMS Detailing (短信科室会) · KOL video on CD · sales-rep training · activity evidence for corporate accounting
+**Tagline:** Detailing  · Lunch Learn and SMS(短信科室会) · KOL video on CD · sales-rep call · expense report · Salesforce effectiveness
 
 - **Situation:** China, 2005–2012: mobile data, streaming video, and unlimited data were not available; no Zoom meeting, no VPN, no virtual workspace. Cellular data was expensive, and sending photos over a mobile phone was not practical. Pharma corporations had hired fleets of sales reps spread around the country.
 - **Pain Points:**
