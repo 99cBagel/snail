@@ -1,0 +1,17 @@
+name = "snail"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+workers_dev = true
+
+routes = [
+  { pattern = "snail.keeg.uk", custom_domain = true }
+]
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = true
+
+[[r2_buckets]]
+binding = "KB"
+bucket_name = "snail-kb"

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>snail — Professional Knowledge Base</title>
+<link rel="icon" href="/snail-icon.svg">
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f1ec; color: #3a2c1e; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.55; }
+.page { max-width: 880px; margin: 0 auto; padding: 28px 22px 56px; }
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand img { width: 52px; height: 52px; }
+.brand-name { font-size: 27px; font-weight: 700; color: #9c6642; }
+.slogan { font-style: italic; color: #6b4a2f; margin-top: 2px; }
+h1 { font-size: 21px; letter-spacing: 1.5px; color: #3a2c1e; border-bottom: 2px solid #9c6642; padding-bottom: 8px; margin: 34px 0 10px; }
+h1 .sub { font-size: 15px; letter-spacing: normal; font-weight: 600; color: #6b4a2f; }
+p { margin: 10px 0; }
+.quotes { background: #fff; border: 1px solid #d8cbb8; border-radius: 8px; padding: 12px 18px; margin: 12px 0; }
+.quotes p { margin: 6px 0; font-style: italic; color: #6b4a2f; }
+.connect-btn { background: #9c6642; color: #fff; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; padding: 11px 26px; cursor: pointer; margin-top: 8px; }
+.connect-btn:hover { background: #87572f; }
+.copied-note { display: inline-block; margin-left: 12px; color: #6b4a2f; font-size: 14px; }
+@media print { .connect-btn { display: none; } body { background: #fff; } }
+</style>
+</head>
+<body>
+<div class="page">
+<div class="brand">
+<img src="/snail-icon.svg" alt="">
+<div>
+<div class="brand-name">snail</div>
+<div class="slogan">Professional Knowledge Base · A2A access · Connect with Agent, then Ask Anonymously</div>
+</div>
+</div>
+<h1>ABOUT AGENTIC KB</h1>
+<p>Joe set up an Agentic KB.</p>
+<p>Joe’s KB (alias JKB) is an agentic KB: A2A sharing of professional experience. Use your own agent to connect and asks it directly — agent to agent.</p>
+<p>The JKB answers only from passages the principal wrote and approved, and stores nothing. (let me know if need more info)</p>
+<div class="quotes">
+<p>“hey JKB, have you solved a problem like ours?”</p>
+<p>“hey JKB, how would you approach it? “</p>
+<p>“hey JKB, what do the first 30 / 90 days look like?”</p>
+</div>
+<h1>TRY JOE'S KB</h1>
+<button class="connect-btn" id="btnConnect" type="button">Connect</button>
+<span class="copied-note" id="copyNote" hidden>Copied — paste it to your agent.</span>
+<h1>BUILD YOUR OWN</h1>
+<p>Content TBD</p>
+</div>
+<script>
+var CONNECT_TEXT = "Connect to https://snail.keeg.uk/joesmith/mcp — the MCP service is Joe's KB, a knowledge base of Joe's professional experience.\nAfter connect, show me the benefits of the solution, and follow the tool examples to match the solution with my projects.\nAll communication in telegram style: short lines, tables, bullets.\nMake the skills reusable, so I can run them again on the next project.";
+document.getElementById("btnConnect").addEventListener("click", function () {
+function done() { document.getElementById("copyNote").hidden = false; }
+if (navigator.clipboard && navigator.clipboard.writeText) {
+navigator.clipboard.writeText(CONNECT_TEXT).then(done, function () { fallback(); done(); });
+} else { fallback(); done(); }
+function fallback() {
+var ta = document.createElement("textarea");
+ta.value = CONNECT_TEXT;
+ta.style.position = "fixed"; ta.style.opacity = "0";
+document.body.appendChild(ta); ta.select();
+try { document.execCommand("copy"); } catch (e) {}
+ta.remove();
+}
+});
+</script>
+</body>
+</html>
