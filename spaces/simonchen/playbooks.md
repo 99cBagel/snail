@@ -9,7 +9,7 @@ updated: 2026-11-17
 
 # Playbooks
 
-Status: Assessment, Training rollout, and Remediation approved and published 2026-11-17 (Interview Part 3). Investigation and Transfer are still to fill. Each method: the sequence, what gets looked at first, the traps.
+Status: Assessment, Training rollout, and Remediation approved and published 2026-11-17 (Interview Part 3). Investigation and Transfer skipped at the principal's direction, 2026-11-17. Each method: the sequence, what gets looked at first, the traps.
 
 ## Assessment
 
@@ -41,15 +41,3 @@ Built case by case — for each case: what went bad (one or two instances), and 
 
 - **What went bad:** The essence of this operation is abstracts of publications. Selection and abstract writing are put to the shoulder of contracted medical writers. We hired a team of moonlighters for the tasks. At the same time their works are emailed to clients for approval. Our client also passes the job to the internal medical team — every pharma has a powerful medical team. Wording and expression must pass through the scrutiny eyes of the medical dept. Disagreement and rejections often take place, causing our work to be late or close to be late.
 - **How it was fixed:** I had assigned employees with medical training or background to act as a liaison. The two employees review the moonlighters' work and pass to client, and then coordinate the reconciliation. At the end, this medical communication service has emerged as a business on its own. At the time there have come out two larger competitors whose sole function is journal abstracting and anchor business to serving pharma. At the end, we are not competitive in this field. We were out totally.
-
-## Investigation
-
-- **Sequence:** to fill
-- **Look at first:** to fill
-- **Traps:** to fill
-
-## Transfer
-
-- **Sequence:** to fill
-- **Look at first:** to fill
-- **Traps:** to fill
