@@ -15,6 +15,8 @@ Status: Case 1 approved by the principal, 2026-11-17; Pain Points subsection add
 
 ## Case 1 — The Yellow Bracelet Project, China (2012–2024)
 
+**Client:** Eisai Co. Ltd (China)
+
 **Tagline:** Patient education · AD awareness · NGO campaign design · national, decade-long campaign · branded wearable
 
 - **Situation:** Eisai Co. Ltd. China wanted to expand the market position of Aricept, the leader in its class — indicated for cognitive function, and taken by the public as the Alzheimer's / dementia pill. China had no patient-advocacy success story.
@@ -41,6 +43,8 @@ Review coverage — from *Dementia Friendly Communities* developments (global ed
 > In 2012, the Yellow Bracelet Project was initiated to encourage safety and prevent people with dementia getting lost. Yellow Bracelet has now become a symbol of affection, and continues to attract attention across society. By the end of 2016, the project had distributed 500,000 free yellow bracelets in 233 cities. The Safe Bracelet Project followed in 2016 in Wenzhou. With the support of a GPS-guided bracelet, 84 people with dementia have been found after they wandered to distant areas.
 
 ## Case 2 — Lunch Learn and SMS Feedback (LL-SMS), China (2005–2012)
+
+**Client:** Pfizer, Novartis, AstraZeneca, Sanofi, Roche, Medtronics, Boston Sci, NovoN, and many more
 
 **Tagline:** Detailing  · Lunch Learn and SMS(短信科室会) · KOL video on CD · sales-rep call · expense report · Salesforce effectiveness
 
