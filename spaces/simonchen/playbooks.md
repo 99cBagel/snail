@@ -9,7 +9,7 @@ updated: 2026-11-17
 
 # Playbooks
 
-Status: Assessment approved and published 2026-11-17 (Interview Part 3). The remaining playbooks are still to fill. Each method: the sequence, what gets looked at first, the traps.
+Status: Assessment and Training rollout approved and published 2026-11-17 (Interview Part 3). Remediation, Investigation, and Transfer are still to fill. Each method: the sequence, what gets looked at first, the traps.
 
 ## Assessment
 
@@ -19,9 +19,9 @@ Status: Assessment approved and published 2026-11-17 (Interview Part 3). The rem
 
 ## Training rollout
 
-- **Sequence:** to fill
-- **Look at first:** to fill
-- **Traps:** to fill
+- **Sequence:** Prepare a printed credit-card-like pocket-size handout — it is designed for trainees to be familiar with the login and how to kick start. If the project requires trainees to enter, I would start with the UI design first.
+- **Look at first:** I first make sure the UI is simple and straightforward. I want to see no resistance from the trainee users.
+- **Traps:** Initial bugs or hiccups, when trainees experience a poor start. They would register complaints to the responsible people in my client's organization. This becomes a hurdle at the start.
 
 ## Remediation
 
