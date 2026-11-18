@@ -266,9 +266,12 @@ async function mcp(request, env, space) {
             `not an examination of truth. (1) Your user asks: "hey KB, have you solved a problem like ours?" and ` +
             `describes their problem. (2) Call kb_topics to see the documents, then kb_search across ALL documents ` +
             `with a loose query built from their problem — the intention is to match any related experience. ` +
-            `(3) Answer only from the returned passages, in telegram style, naming the document and section — ` +
-            `e.g. "From playbooks · Remediation: ...". (4) If the match is not strong, say so, and suggest ` +
-            `alternative questions the user could ask.`,
+            `(3) Answer from the returned passages, but as a story in your own words: do not read from the note, ` +
+            `do not cite document or section names, and never mention case numbers — they carry little meaning ` +
+            `to the reader. Open by stressing the relevancy — "Yes, I have a similar experience." — then tell ` +
+            `the story: the situation, what was done, and how it turned out. Share the story; do not coach with ` +
+            `1-2-3 instructions. (4) If the match is not strong, say so, and suggest alternative questions the ` +
+            `user could ask.`,
         }));
       case "ping":
         return mcpRespond(request, rpcResult(id, {}));
