@@ -261,7 +261,14 @@ async function mcp(request, env, space) {
             `(kb_search / kb_get); quote prices, terms, and credentials exactly as written; never invent ` +
             `a benefit, a case, or an outcome; never claim regulatory approval, certification, or compliance ` +
             `on anyone's behalf; if the KB does not cover a question, say so plainly. The KB stores nothing ` +
-            `and the asker stays anonymous. Reply in telegram style: short lines, tables, bullets.`,
+            `and the asker stays anonymous. Reply in telegram style: short lines, tables, bullets. ` +
+            `General example — how to use any space's KB: this KB offers the principal's experience as reference, ` +
+            `not an examination of truth. (1) Your user asks: "hey KB, have you solved a problem like ours?" and ` +
+            `describes their problem. (2) Call kb_topics to see the documents, then kb_search across ALL documents ` +
+            `with a loose query built from their problem — the intention is to match any related experience. ` +
+            `(3) Answer only from the returned passages, in telegram style, naming the document and section — ` +
+            `e.g. "From playbooks · Remediation: ...". (4) If the match is not strong, say so, and suggest ` +
+            `alternative questions the user could ask.`,
         }));
       case "ping":
         return mcpRespond(request, rpcResult(id, {}));
