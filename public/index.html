@@ -20,6 +20,8 @@ h1 .sub { font-size: 15px; letter-spacing: normal; font-weight: 600; color: #6b4
 p { margin: 10px 0; }
 .quotes { background: #fff; border: 1px solid #d8cbb8; border-radius: 8px; padding: 12px 18px; margin: 12px 0; }
 .quotes p { margin: 6px 0; font-style: italic; color: #6b4a2f; }
+.copy-btn { background: #fff; border: 1px solid #9c6642; color: #9c6642; border-radius: 6px; padding: 3px 10px; cursor: pointer; font-size: 14px; margin-left: 8px; vertical-align: middle; }
+.copy-btn:hover { background: #f0e7da; }
 .connect-btn { background: #9c6642; color: #fff; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; padding: 11px 26px; cursor: pointer; margin-top: 8px; }
 .connect-btn:hover { background: #87572f; }
 code { background: #fff; border: 1px solid #d8cbb8; border-radius: 6px; padding: 2px 8px; font-size: 15px; }
@@ -46,28 +48,34 @@ p a:hover { text-decoration: underline; }
 <p>“hey KB, how would you approach it? “</p>
 <p>“hey KB, what do the first 30 / 90 days look like?”</p>
 </div>
-<h1>TRY SIMON's KB</h1>
-<p>MCP endpoint, copy this endpoint: <code>https://snail.keeg.uk/mcp</code></p>
-<button class="connect-btn" id="btnCopy" type="button">Copy endpoint</button>
-<span class="copied-note" id="copyNote" hidden>Copied.</span>
-<p>See how to set up in: <a href="https://snail-eyes.keeg.uk/media/assets/how-to-connect-meta-muse.mp4" target="_blank" rel="noopener">&#9654; Muse</a>, <a href="https://snail-eyes.keeg.uk/media/assets/how-to-connect-chatgpt.mp4" target="_blank" rel="noopener">&#9654; ChatGPT</a>, <a href="https://snail-eyes.keeg.uk/media/assets/how-to-connect-claude.mp4" target="_blank" rel="noopener">&#9654; Claude</a></p>
+<h1>STEP 1. CONNECT</h1>
+<p>Open Agent and connect to this endpoint : <code>https://snail.keeg.uk/mcp</code><button class="copy-btn" id="btnCopyEp" type="button" title="Copy endpoint">&#10697; Copy</button><span class="copied-note" id="noteEp" hidden>Copied.</span></p>
+<p>Connect demo video: <a href="https://snail-eyes.keeg.uk/media/assets/how-to-connect-meta-muse.mp4" target="_blank" rel="noopener">&#9654; Muse</a>, <a href="https://snail-eyes.keeg.uk/media/assets/how-to-connect-chatgpt.mp4" target="_blank" rel="noopener">&#9654; ChatGPT</a>, <a href="https://snail-eyes.keeg.uk/media/assets/how-to-connect-claude.mp4" target="_blank" rel="noopener">&#9654; Claude</a></p>
+<h1>STEP 2. ACCESS SIMON's KB</h1>
+<button class="connect-btn" id="btnTry" type="button">TRY WITH AGENT</button>
+<span class="copied-note" id="noteTry" hidden>Copied — paste it to your agent.</span>
 </div>
 <script>
-var CONNECT_TEXT = "https://snail.keeg.uk/mcp";
-document.getElementById("btnCopy").addEventListener("click", function () {
-function done() { document.getElementById("copyNote").hidden = false; }
+var EP_TEXT = "https://snail.keeg.uk/mcp";
+var TRY_TEXT = "Connect to https://snail.keeg.uk/mcp — the MCP service is named Hey KB, a knowledge base of Simon Chen's professional experience.\nAfter connect, show me the benefits of the solution, and follow the tool examples to match the solution with my projects.\nAll communication in telegram style: short lines, tables, bullets.\nMake the skills reusable, so I can run them again on the next project.";
+function wireCopy(btnId, noteId, text) {
+document.getElementById(btnId).addEventListener("click", function () {
+function done() { document.getElementById(noteId).hidden = false; }
 if (navigator.clipboard && navigator.clipboard.writeText) {
-navigator.clipboard.writeText(CONNECT_TEXT).then(done, function () { fallback(); done(); });
+navigator.clipboard.writeText(text).then(done, function () { fallback(); done(); });
 } else { fallback(); done(); }
 function fallback() {
 var ta = document.createElement("textarea");
-ta.value = CONNECT_TEXT;
+ta.value = text;
 ta.style.position = "fixed"; ta.style.opacity = "0";
 document.body.appendChild(ta); ta.select();
 try { document.execCommand("copy"); } catch (e) {}
 ta.remove();
 }
 });
+}
+wireCopy("btnCopyEp", "noteEp", EP_TEXT);
+wireCopy("btnTry", "noteTry", TRY_TEXT);
 </script>
 </body>
 </html>
