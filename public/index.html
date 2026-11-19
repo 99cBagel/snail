@@ -3,12 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>snail — Professional Knowledge Base</title>
+<title>snail: Hey KB</title>
 <link rel="icon" href="/snail-icon.svg">
 <style>
 * { box-sizing: border-box; }
 body { margin: 0; background: #f4f1ec; color: #3a2c1e; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.55; }
 .page { max-width: 880px; margin: 0 auto; padding: 28px 22px 56px; }
+.back { display: inline-block; color: #9c6642; text-decoration: none; font-size: 14px; font-weight: 600; margin-bottom: 18px; }
+.back:hover { text-decoration: underline; }
 .brand { display: flex; align-items: center; gap: 12px; }
 .brand img { width: 52px; height: 52px; }
 .brand-name { font-size: 27px; font-weight: 700; color: #9c6642; }
@@ -21,7 +23,7 @@ p { margin: 10px 0; }
 .connect-btn { background: #9c6642; color: #fff; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; padding: 11px 26px; cursor: pointer; margin-top: 8px; }
 .connect-btn:hover { background: #87572f; }
 .copied-note { display: inline-block; margin-left: 12px; color: #6b4a2f; font-size: 14px; }
-@media print { .connect-btn { display: none; } body { background: #fff; } }
+@media print { .back, .connect-btn { display: none; } body { background: #fff; } }
 </style>
 </head>
 <body>
@@ -29,27 +31,25 @@ p { margin: 10px 0; }
 <div class="brand">
 <img src="/snail-icon.svg" alt="">
 <div>
-<div class="brand-name">snail</div>
+<div class="brand-name">snail: Hey KB</div>
 <div class="slogan">Professional Knowledge Base · A2A access · Connect with Agent, then Ask Anonymously</div>
 </div>
 </div>
 <h1>ABOUT AGENTIC KB</h1>
-<p>Joe has set up an Agentic KB.</p>
-<p>Joe’s KB (alias JKB) is an agentic KB: A2A sharing of professional experience. Use your own agent to connect and asks it directly — agent to agent.</p>
-<p>The JKB answers only from passages the principal wrote and approved, and stores nothing. (let me know if need more info)</p>
+<p>Simon Chen has set up an Agentic KB.</p>
+<p>Simon Chen's KB is an agentic KB: A2A sharing of professional experience. Use your own agent to connect and asks it directly — agent to agent.</p>
+<p>The KB answers only from passages the principal wrote and approved, and stores nothing.</p>
 <div class="quotes">
-<p>“hey JKB, have you solved a problem like ours?”</p>
-<p>“hey JKB, how would you approach it? “</p>
-<p>“hey JKB, what do the first 30 / 90 days look like?”</p>
+<p>“hey KB, have you solved a problem like ours?”</p>
+<p>“hey KB, how would you approach it? “</p>
+<p>“hey KB, what do the first 30 / 90 days look like?”</p>
 </div>
-<h1>TRY JOE'S KB</h1>
+<h1>TRY SIMON CHEN'S KB</h1>
 <button class="connect-btn" id="btnConnect" type="button">Connect</button>
 <span class="copied-note" id="copyNote" hidden>Copied — paste it to your agent.</span>
-<h1>BUILD YOUR OWN</h1>
-<p>Content TBD</p>
 </div>
 <script>
-var CONNECT_TEXT = "Connect to https://snail.keeg.uk/joesmith/mcp — the MCP service is Joe's KB, a knowledge base of Joe's professional experience.\nAfter connect, show me the benefits of the solution, and follow the tool examples to match the solution with my projects.\nAll communication in telegram style: short lines, tables, bullets.\nMake the skills reusable, so I can run them again on the next project.";
+var CONNECT_TEXT = "Connect to https://snail.keeg.uk/mcp — the MCP service is Simon Chen's KB, a knowledge base of Simon Chen's professional experience.\nAfter connect, show me the benefits of the solution, and follow the tool examples to match the solution with my projects.\nAll communication in telegram style: short lines, tables, bullets.\nMake the skills reusable, so I can run them again on the next project.";
 document.getElementById("btnConnect").addEventListener("click", function () {
 function done() { document.getElementById("copyNote").hidden = false; }
 if (navigator.clipboard && navigator.clipboard.writeText) {

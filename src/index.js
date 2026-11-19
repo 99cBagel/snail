@@ -312,6 +312,7 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     try {
+      if (url.pathname === "/mcp") return await mcp(request, env, "simonchen");
       const m = SPACE_MCP.exec(url.pathname);
       if (m) return await mcp(request, env, m[1]);
       return await env.ASSETS.fetch(request);
