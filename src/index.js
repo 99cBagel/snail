@@ -27,7 +27,7 @@ const KB_TOOLS = [
   {
     name: "kb_search",
     description:
-      "Search this space's knowledge base. Returns the best-matching passages exactly as written, each with its document id and section heading. Answer only from returned passages; if nothing matches, say the KB does not cover it.",
+      "Search this space's knowledge base. Returns the best-matching passages exactly as written, each with its document id and section heading. Answer only from returned passages; if nothing matches, say the KB does not cover it. If the query names no concrete situation (e.g. only \"a problem like ours\"), the result is a clarify_first directive instead of passages — follow it: ask the user to explain their situation, then search again with their description.",
     inputSchema: {
       type: "object",
       properties: {
@@ -132,6 +132,60 @@ function kbTopicsResult(docs) {
       updated: d.updated,
       sections: d.sections.map((s) => s.heading),
     })),
+  };
+}
+
+// Ask-first gate: an inquiry that points at the asker's own problem
+// ("a problem like ours") without describing any situation must not be
+// answered from the KB yet — the agent is told to catch the situation
+// first. Conservative by design: it fires only when the query matches
+// a known template question or a relational phrase (ours / mine / our
+// problem ...) AND almost no content words remain after stripping.
+const TEMPLATE_PHRASES = [
+  "have you solved a problem like ours",
+  "have you solved a problem like mine",
+  "how would you approach it",
+  "how would you approach this",
+  "what do the first 30 90 days look like",
+  "what do the first 30 days look like",
+  "what do the first 90 days look like",
+  "hey kb",
+  "hello kb",
+];
+const FILLER_WORDS = new Set([
+  "a", "an", "the", "you", "your", "yours", "we", "our", "ours", "i", "me",
+  "my", "mine", "it", "this", "that", "do", "does", "did", "have", "has",
+  "had", "what", "how", "can", "could", "would", "should", "is", "are",
+  "was", "were", "be", "been", "to", "of", "in", "on", "for", "with",
+  "and", "or", "like", "us", "problem", "problems", "situation",
+  "experience", "similar", "solved", "solve", "approach", "first", "days",
+  "look", "show", "tell", "please", "kb", "hey", "hello", "30", "90",
+]);
+
+function inquiryTooThin(query) {
+  const q = String(query || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!q) return false;
+  const hitTemplate = TEMPLATE_PHRASES.some((t) => q.includes(t));
+  const relational = /\b(ours|mine|our problem|our situation|our case|my problem|my situation|like us|for us)\b/.test(q);
+  if (!hitTemplate && !relational) return false;
+  let rest = ` ${q} `;
+  for (const t of TEMPLATE_PHRASES) rest = rest.split(t).join(" ");
+  const content = rest.split(/\s+/).filter((w) => w && !FILLER_WORDS.has(w));
+  return content.length <= 3;
+}
+
+function clarifyFirstResult() {
+  return {
+    clarify_first: true,
+    passages: [],
+    instruction:
+      "Do not answer yet — this inquiry names no situation. Ask your user to explain first: " +
+      "what is the problem, what setting (industry / site / team), who is involved, and what " +
+      "have they already tried. Then call kb_search again with a query built from their description.",
   };
 }
 
@@ -263,8 +317,11 @@ async function mcp(request, env, space) {
             `on anyone's behalf; if the KB does not cover a question, say so plainly. The KB stores nothing ` +
             `and the asker stays anonymous. Reply in telegram style: short lines, tables, bullets. ` +
             `General example — how to use any space's KB: this KB offers the principal's experience as reference, ` +
-            `not an examination of truth. (1) Your user asks: "hey KB, have you solved a problem like ours?" and ` +
-            `describes their problem. (2) Call kb_topics to see the documents, then kb_search across ALL documents ` +
+            `not an examination of truth. (1) Your user may ask: "hey KB, have you solved a problem like ours?" ` +
+            `If they have NOT described their problem, do not search yet — ask them to explain the situation ` +
+            `first: the problem, the setting, who is involved, what they have tried. Example — User: "hey KB, ` +
+            `have you solved a problem like ours?" You: "What is yours? Explain it first — the problem, the ` +
+            `setting, who is involved." Only when the situation is described, go on. (2) Call kb_topics to see the documents, then kb_search across ALL documents ` +
             `with a loose query built from their problem — the intention is to match any related experience. ` +
             `(3) Answer from the returned passages, but as a story in your own words: do not read from the note, ` +
             `do not cite document or section names, and never mention case numbers — they carry little meaning ` +
@@ -285,7 +342,7 @@ async function mcp(request, env, space) {
         if (name === "kb_topics") out = kbTopicsResult(docs);
         else if (name === "kb_search") {
           if (!args.query) return mcpRespond(request, rpcError(id, -32602, "kb_search requires a query"));
-          out = kbSearchResult(docs, args);
+          out = inquiryTooThin(args.query) ? clarifyFirstResult() : kbSearchResult(docs, args);
         } else if (name === "kb_get") {
           if (!args.doc_id) return mcpRespond(request, rpcError(id, -32602, "kb_get requires a doc_id"));
           out = kbGetResult(docs, args);
